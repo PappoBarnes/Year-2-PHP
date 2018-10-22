@@ -16,13 +16,9 @@ catch (PDOException $exception)
 {
 	echo "Oh no, there was a problem" . $exception->getMessage();
 }
-
 //the search term the user entered
-
 $searchTerm=$_GET['search'];
-
 //Need to use a LIKE for fuzzy matching just like in previous weeks 
-
 $stmt = $conn->prepare("SELECT * FROM brands WHERE brand LIKE :searchTerm");
 $stmt->bindValue(":searchTerm","%{$searchTerm}%");
 $stmt->execute();
@@ -50,7 +46,6 @@ $brands = $stmt->fetchAll();
 		
 		<a href="assign.php"><button>sole search</button></a>
 		<div id="blank"></div>
-		<!-- <input type="text" name="search" id="brand" placeholder="Search Your Sole"></input> -->
 		<a href="design.php"><button>design</button></a>
 		<a href="details.php"><button>details</button></a>
 </header>
@@ -67,4 +62,3 @@ foreach ($brands as $brand) {
 
 </body>
 </html>
-

@@ -50,9 +50,7 @@
 			<label for="search"></label>
 			<input type="text" name="search" id="search" placeholder="Search Your Sole"></input>
 			</fieldset>
-			
 			<input type="submit" id="searchButton"></input>
-				</fieldset>
 		</form> 
 		</div>
 	</section>
@@ -62,4 +60,3 @@
 
 </body>
 </html>
-
