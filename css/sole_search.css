@@ -1,0 +1,294 @@
+* {
+padding: 0;
+margin: 0;
+width: 100%;
+height: auto;
+font-family: Helvetica, Ariel, sans-serif;
+font-size: 20px;
+background-color:#78A485;
+}
+body {
+    max-width: 100%;
+    /*width: 1024px;*/
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#titlebar{
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr
+
+}
+
+fieldset{
+	width:150px;
+	margin: auto;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr
+}
+
+input#brand{
+	margin-left: 200px;
+}
+
+ul{
+
+	display: inline-grid;
+}
+
+#searchResult{
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/veggies_700.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/*VEGAN BRAIN CSS*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/* ##Table of Content##
+# Global
+# Stucture Tags
+# # # HTML Text Styling Tags
+# ID's
+# Classes
+# Media Queries
+# Social Icons
+# DROPDOWN MENU
+# Button
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/*  COLORS- NEW
+#CAEDC7 - (Pale Green)
+#78A485 - Dark Green
+#CEF3A5 -  Green Pastel
+#EFF36A - Yellow Bright
+#FFF293 - Darker Pastel Yellow
+////////////////////////////////////
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/*fonts*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---
+font-family: 'Amatic SC', cursive;
+font-family: 'Abel', sans-serif;
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/* GLOBAL*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+* {
+padding: 0;
+margin: 0;
+width: 100%;
+height: auto;
+font-family: Helvetica, Ariel, sans-serif;
+font-size: 20px;
+background-color:#78A485;
+}
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/* Structure TAGS*/
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+body{
+max-width: 100%;
+width:960px;
+margin-right: auto;
+margin-left: auto;
+margin-top:auto;
+margin-bottom: auto;
+}
+nav{
+/*margin-top: 28%;*/
+/*position: fixed;*/
+}
+menu{
+text-align: center;
+width:100%;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+height:6%;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows:1fr;
+margin-left: auto;
+}
+select{
+/*width:40%;*/
+background-color:#ffffff;
+}
+#articleShop img {
+height:max-content;
+}
+#mug{
+	background-color: #fff;
+/*height: 100%;*/
+}
+label{
+/*width:80%;*/
+background-color:#ffffff;
+}
+header{
+background-color:#eaf5dd;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows:1fr;
+width:100%;
+height:28%;
+max-width:100%;
+margin: auto;
+}
+section{
+background-color: #CAEDC7;
+width: 100%;
+height:auto;
+}
+
+input{
+text-align: center;
+font-size: 36px;
+font-family: 'Amatic SC', cursive;
+color:white;
+border-radius: 8px;
+}
+input::placeholder{
+text-align: center;
+padding-top:12px;
+font-size: 36px;
+font-family: 'Amatic SC', cursive;
+color:white;
+opacity:0.9;
+}
+
+fieldset{
+border: none;}
+/*width:max-content;*/
+
+ul{
+display:inline-grid;
+}
+/*---___---___---___---___---*/
+/*---___---___---___---___---*/
+/* HTML TEXT STYLINGs*/
+h1, h2, h3, h4, h5 {
+font-family: 'Amatic SC', cursive;;
+display: block;
+background-color: #fff;
+}
+h1
+{font-size:200%;
+text-align: center;}
+h2 p{
+font-size:40%;
+}
+p{
+font-family:'Roboto', sans-serif;
+background-color: #fff;
+}
+a{
+background-color:#ffffff;
+/*font-size: 18px;*/
+/*margin-left:auto;*/
+/*margin-right: auto;*/
+text-decoration: none;
+/*justify-content: left;*/
+/*max-width: 100%;*/
+}
+img a {
+float:right;
+background-color: #eaf5dd;
+}
+i{
+background-color: #fff;
+text-align: center;
+width:inherit;
+height:inherit;
+}
+ul{
+background-color: #ffffff;
+box-shadow: 20px 20px 8px 8px rgba(0, 0, 0, 0.12);
+}
+li {
+background-color: #ffffff;
+font-family: 'Amatic SC', cursive;
+font-size: 1.5em;
+list-style: none;
+}
+
+form #search{
+z-index: -1;
+border-radius: 8px;
+height: 57px;
+border:white 9px solid;
+}
+form #search:focus{
+background-color: lightgrey;
+outline: none;
+}
+#SearchBox{
+background-color: none;
+}
+#mainSearch{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+width:100%;
+margin:auto;
+margin-left: auto;
+margin-right: auto;
+height:400px;
+}
+#searchResults img{
+z-index: -1;
+height:100%;
+width:100%;
+align-content: center;
+margin-left: auto;
+margin-right: auto;}
+
+#resultSpace{
+height:500px;
+}
+#searchButton{
+background-image:url(../images/search_icon.svg);
+background-repeat: no-repeat;
+border:white 9px solid;
+border-radius:9px;
+outline:none;
+align-content:justify;
+}
+#searchButton:hover{
+background-color: #b87098;
+}
+section#resultContainer{
+display: block;
+width:50%;
+margin:auto;
+margin-bottom:6%;
+margin-left: auto;
+margin-right: auto;
+height:auto;
+font-family: 'Amatic SC', cursive;
+color:#b87098;
+background-color: #b87098;
+/*box-shadow: 2px 13px 18px 0px rgba(0, 0, 0, 0.16);*/
+}
+
