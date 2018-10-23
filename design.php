@@ -15,20 +15,20 @@ catch (PDOException $exception)
 {
 	echo "Oh no, there was a problem" . $exception->getMessage();
 }
+//select all the Brands
+$query = "SELECT * FROM brands";
+$resultset = $conn->query($query);
+$brands = $resultset->fetchAll();
+//select all the Models
+$queryModel = "SELECT * FROM Models";
+$resultsetModel = $conn->query($queryModel);
+$models = $resultsetModel->fetchAll();
+
+//select all the Models
+$queryStyles = "SELECT * FROM Styles";
+$resultsetStyle = $conn->query($queryStyles);
+$styles = $resultsetStyle->fetchAll();
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- /*---___---___---___---___---*/
 /*---___---___---___---___---*/
 /* HTML*/
@@ -53,21 +53,53 @@ catch (PDOException $exception)
 		<a href="details.php"><button>details</button></a>
 		</header>
 
-	<?php
+
+<section>
+		<img src="images/Sneakers_Class.png">
+</section>
+
+<section>
+<?php
 echo "<table>";
 echo "<tr><th>id</th><th>Brand</th></tr>";
-foreach ($brand as $brand){
+foreach ($brands as $brand){
 
 	echo "<tr>";
 	echo "<td>{$brand['id']}</td>";
 	echo "<td>{$brand['brand']}</td>";
 	echo "<tr>";
 }
+echo "</table>";
+?>
+
+
+
+<?php
+echo "<table>";
+echo "<tr><th>id</th><th>Model</th></tr>";
+foreach ($models as $model){
+
+	echo "<tr>";
+	echo "<td>{$model['id']}</td>";
+	echo "<td>{$model['model']}</td>";
+	echo "<tr>";
+}
 echo "</table>"
 
 ?>
-<section>
-		<img src="images/Sneakers_Class.png">
+<?php
+echo "<table>";
+echo "<tr><th>id</th><th>Styles</th></tr>";
+foreach ($styles as $style){
+
+	echo "<tr>";
+	echo "<td>{$style['id']}</td>";
+	echo "<td>{$style['style']}</td>";
+	echo "<tr>";
+}
+echo "</table>"
+
+?>
 </section>
 
 </body>

@@ -5,8 +5,6 @@
 /* PHP*/
 /*---___---___---___---___---*/
 /*---___---___---___---___---*/ -->
-
-
 <?php
 try{
     $conn = new PDO('mysql:host=localhost;dbname=Assign_1', 'u1774692', '10dec74');
