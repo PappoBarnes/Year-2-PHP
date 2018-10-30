@@ -4,18 +4,8 @@
 /*---___---___---___---___---*/
 /* PHP*/
 /*---___---___---___---___---*/
-/*---___---___---___---___---*/ -->
 
-
-
-
-
-
-
-
-
-
-<!-- /*---___---___---___---___---*/
+/*---___---___---___---___---*/http://192.168.64.2/Assignment/design.php
 /*---___---___---___---___---*/
 /* HTML*/
 /*---___---___---___---___---*/
@@ -27,7 +17,7 @@
 	<title>Sole Search, For Sneakerheads</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
 		<!-- <link rel="stylesheet" type="text/css" href="css/sole_search.css"> -->
 </head>
@@ -37,7 +27,7 @@
 		<a href="assign.php"><button>sole search<button></a>
 		<div id="blank"></div>
 		<a href="design.php"><button>design</button></a>
-		<a href="details.php"><button>details</button></a>
+		<!-- <a href="details.php"><button>details</button></a> -->
 		</header>
 
 
@@ -50,13 +40,14 @@
 			<label for="search"></label>
 			<input type="text" name="search" id="search" placeholder="Search Your Sole"></input>
 			</fieldset>
-			<input type="submit" id="searchButton"></input>
+			<input type="submit" name=""id="searchButton"></input>
 		</form> 
 		</div>
 	</section>
 			<section id=resultContainer>
-				
+
 			</section>
 
 </body>
 </html>
+
